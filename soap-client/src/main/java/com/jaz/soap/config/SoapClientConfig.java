@@ -11,7 +11,7 @@ public class SoapClientConfig {
     @Bean
     public Jaxb2Marshaller marshaller(){
         Jaxb2Marshaller jaxb2Marshaller = new Jaxb2Marshaller();
-        jaxb2Marshaller.setContextPath("com.medium.article");
+        jaxb2Marshaller.setContextPath("com.jaz.soap.client");
         return jaxb2Marshaller;
     }
 
