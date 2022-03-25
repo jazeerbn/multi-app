@@ -18,7 +18,7 @@ public class SoapClientConfig {
     @Bean
     public EmployeeSoapClient employeeClient(Jaxb2Marshaller jaxb2Marshaller) {
         EmployeeSoapClient testClient = new EmployeeSoapClient();
-        testClient.setDefaultUri("http://localhost:8080/ws/employee");
+        testClient.setDefaultUri("http://localhost:8088/mockEmployeePortSoap11");
         testClient.setMarshaller(jaxb2Marshaller);
         testClient.setUnmarshaller(jaxb2Marshaller);
         return testClient;
